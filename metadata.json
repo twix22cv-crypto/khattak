@@ -1,0 +1,6 @@
+{
+  "name": "Khattak (خطك) - Generator Subscription Management",
+  "description": "Comprehensive Iraqi neighborhood private generator management platform for generator owners and subscribers, featuring automated billing, ZainCash/FIB payments, ampere management, and outage broadcasts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

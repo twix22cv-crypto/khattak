@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #040710;
+    color: #cbd5e1;
+    font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Monospace for numbers, serial codes, currencies, wattages */
+  .font-mono-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-feature-settings: 'tnum';
+  }
+}
+
+/* Sophisticated Dark Utility Helpers */
+.sophisticated-card {
+  background-color: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(30, 41, 59, 0.8);
+}
+
+.sophisticated-card-subtle {
+  background-color: #080c18;
+  border: 1px solid rgba(30, 41, 59, 0.6);
+}
+
+/* Thermal printer print sheet styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #thermal-receipt-modal,
+  #thermal-receipt-modal * {
+    visibility: visible;
+  }
+  #thermal-receipt-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80mm;
+    margin: 0;
+    padding: 10px;
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #040710;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.6);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.6);
+}
+
+
